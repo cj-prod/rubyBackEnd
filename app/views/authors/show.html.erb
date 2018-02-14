@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Back', authors_path, {:class => 'btn btn-info'} %>
+<hr>
+<p>
+  <strong>Username:</strong>
+  <%= @author.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @author.email %>
+</p>
+
+<hr>
+<%= link_to 'Edit', edit_author_path(@author), {:class => 'btn btn-success' } %> 
+

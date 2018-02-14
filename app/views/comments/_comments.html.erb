@@ -1,0 +1,14 @@
+<h3>Comments (<%= @article.comments.size %>)</h3>
+<% @article.comments.each do |comment| %>
+	<div class='well'>
+		<!-- Time stamp -->
+		<p>Posted <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago</p>
+
+		<!-- Comment content display -->
+		<p><strong><%= comment.username %></strong>: <%= comment.body %>
+			<i style='float:right'><%= link_to 'delete', [comment.article, comment],
+						method: :delete,
+						data: {confirm: 'Are you Sure?'},
+						:class => 'btn btn-danger btn-sm' %></i></p>
+	</div>
+<% end %>

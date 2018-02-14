@@ -1,0 +1,16 @@
+<h1 style='text-align:center'>All Articles</h1>
+
+<% if logged_in? %>
+	<%= link_to "Create a New Article", new_article_path, class:"btn btn-success" %>
+
+	<i style="float:right"><%= link_to "manage tags", tags_path, class:"btn btn-warning btn-sm" %></i>
+<% end %>
+<br><br>
+
+<ul id="articles" class='list-group' style='text-align:center'>
+  <% @articles.each do |article| %>
+    <li class='list-group-item'>
+      <%= link_to  article.title, article_path(article), class: 'article_title', id: 'article_#{article.id}' %>
+    </li>
+  <% end %>
+</ul>
