@@ -21,11 +21,15 @@
     <%= f.label :category_id %><br/>
     <%= f.select(:category_id, Category.all.collect{|c| [c.name, c.id]}) %>
   </p>
+  
+  <% if current_user.role == 'admin' %>
   <p>
     <%= f.label :published %> 
     <%= f.check_box(:published) %>
 
   </p>
+  <% end %>
+  
   <p>
     <%= f.submit({:class => 'btn btn-primary'}) %>
   </p>

@@ -9,8 +9,24 @@
 
 <ul id="articles" class='list-group' style='text-align:center'>
   <% @articles.each do |article| %>
-    <li class='list-group-item'>
-      <%= link_to  article.title, article_path(article), class: 'article_title', id: 'article_#{article.id}' %>
-    </li>
+    
+    	<% unless logged_in? %>
+    		<% if article.published == true %>
+    			<li class='list-group-item'>
+      				<%= link_to  article.title, article_path(article), class: 'article_title', id: 'article_#{article.id}' %>
+      			</li>
+      	<% end %>
+      <% else %>
+        <% if article.published == true %>
+      		<li class='list-group-item'>
+      			<%= link_to  article.title, article_path(article), class: 'article_title', id: 'article_#{article.id}' %>
+      		</li>
+        <% else %>
+        <li class='list-group-item'>
+            <%= link_to  article.title, article_path(article), class: 'article_title waiting_for_confirmation', id: 'article_#{article.id}', style: 'color:red' %>
+            </li>
+        <% end %>
+      <% end %>
+    
   <% end %>
 </ul>
