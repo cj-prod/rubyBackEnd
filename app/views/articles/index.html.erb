@@ -20,10 +20,16 @@
         <% if article.published == true %>
       		<li class='list-group-item'>
       			<%= link_to  article.title, article_path(article), class: 'article_title', id: 'article_#{article.id}' %>
+            <% if article.writenby == current_user.email %>
+              <b style="color:green">   U</b>
+            <% end %>
       		</li>
         <% else %>
         <li class='list-group-item'>
             <%= link_to  article.title, article_path(article), class: 'article_title waiting_for_confirmation', id: 'article_#{article.id}', style: 'color:red' %>
+            <% if article.writenby == current_user.email %>
+              <b style="color:green"> U</b>
+            <% end %>
             </li>
         <% end %>
       <% end %>
