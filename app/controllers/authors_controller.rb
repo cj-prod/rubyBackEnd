@@ -1,6 +1,22 @@
 class AuthorsController < ApplicationController
   before_action :set_author, only: [:show, :edit, :update, :destroy]
-  before_action :require_login, except: [:new, :create]
+  #before_action :require_login, except: [:new, :create], unless: -> { Author.count == 0}
+  before_action :require_login, unless: -> { Author.count == 0 }
+  before_action :role_is_admin, unless: -> { Author.count == 0 }
+  #before_action :zero_authors_or_authenticated, only: [:new, :create]
+
+  #def zero_authors_or_authenticated
+  #  unless Author.count == 0 || current_user
+  #    redirect_to root_path
+  #    return false
+  #  end
+  #end
+  def role_is_admin
+    if current_user.role != 'admin'
+      redirect_to root_path
+      return false
+    end
+  end
 
 
   # GET /authors
@@ -26,7 +42,12 @@ class AuthorsController < ApplicationController
   # POST /authors
   # POST /authors.json
   def create
-    @author = Author.new(author_params)
+    if Author.count == 0
+      @author = Author.new(author_params)
+      @author.role = 'admin';
+    else
+      @author = Author.new(author_params)
+    end
 
     respond_to do |format|
       if @author.save
@@ -62,6 +83,7 @@ class AuthorsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

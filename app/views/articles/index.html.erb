@@ -2,8 +2,9 @@
 
 <% if logged_in? %>
 	<%= link_to "Create a New Article", new_article_path, class:"btn btn-success" %>
-
-	<i style="float:right"><%= link_to "manage tags", tags_path, class:"btn btn-warning btn-sm" %></i>
+  <% if current_user.role == 'admin' %>
+	 <i style="float:right"><%= link_to "manage tags", tags_path, class:"btn btn-warning btn-sm" %></i>
+  <% end %>
 <% end %>
 <br><br>
 

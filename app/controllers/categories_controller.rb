@@ -1,6 +1,14 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
   before_action :require_login, except: [:index, :show, :new, :create]
+  before_action :role_is_admin
+
+  def role_is_admin
+    if current_user.role != 'admin'
+      redirect_to root_path
+      return false
+    end
+  end
   
   # GET /categories
   # GET /categories.json

@@ -15,8 +15,13 @@
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, {:class => 'form-control'} %>
     <hr>
-    <%= f.label :role %>
-    <%= f.select(:role, ["admin", "redactor"], :prompt => 'Select One') %>
+    <% if Author.count == 0 %>
+      <%= f.label :role %>
+      <%= f.text_field :role, :value => 'admin', readonly: true %>
+    <% else %>
+      <%= f.label :role %>
+      <%= f.select(:role, ["admin", "redactor"], :prompt => 'Select One') %>
+    <% end %>
     <hr>
     
 

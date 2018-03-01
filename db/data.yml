@@ -1,0 +1,283 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2018-02-14 15:12:11.533960'
+    - '2018-02-14 15:12:11.533960'
+
+---
+articles:
+  columns:
+  - id
+  - title
+  - body
+  - created_at
+  - updated_at
+  - category_id
+  - published
+  - writenby
+  records: 
+  - - 1
+    - Another Test
+    - "<p style=\"text-align: center;\"><img alt=\"\" src=\"/uploads/ckeditor/pictures/1/content_Tulips.jpg\"
+      style=\"width: 500px; height: 375px;\" /></p>\r\n\r\n<p style=\"text-align:
+      center;\"><span style=\"font-size:26px;\">Echo</span></p>\r\n\r\n<p style=\"text-align:
+      center;\"><span style=\"font-size:22px;\">Echo</span></p>\r\n\r\n<p style=\"text-align:
+      center;\"><span style=\"font-size:18px;\">Echo</span></p>\r\n\r\n<p style=\"text-align:
+      center;\"><span style=\"font-size:14px;\">Echo</span></p>\r\n\r\n<p style=\"text-align:
+      center;\"><span style=\"font-size:10px;\">Echo</span></p>\r\n"
+    - '2018-02-14 16:16:27.148488'
+    - '2018-02-14 16:16:27.148488'
+    - 1
+    - true
+    - 
+  - - 2
+    - Troisieme Test titre
+    - "<p><img alt=\"\" src=\"/uploads/ckeditor/pictures/3/content_Penguins.jpg\"
+      style=\"width: 500px; height: 375px;\" /></p>\r\n\r\n<p>Some pinguin</p>\r\n\r\n<p>some
+      pinguin</p>\r\n\r\n<p>some pinguin TEST</p>\r\n"
+    - '2018-02-15 08:56:24.319855'
+    - '2018-02-19 08:59:11.846577'
+    - 1
+    - true
+    - haku@mail.com
+  - - 3
+    - Jenny rocks
+    - "<p><img alt=\"\" src=\"/uploads/ckeditor/pictures/1/content_Tulips.jpg\" style=\"width:
+      400px; height: 300px;\" /></p>\r\n\r\n<p>jenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sick jenny
+      is sick</p>\r\n"
+    - '2018-02-15 15:50:44.194758'
+    - '2018-02-19 09:18:06.931500'
+    - 1
+    - false
+    - jenny@mail.com
+  - - 4
+    - try it 3
+    - "<p>jenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is sickjenny is
+      sickjenny is sickjenny is sickt</p>\r\n"
+    - '2018-02-15 15:53:49.336348'
+    - '2018-02-15 15:57:21.974510'
+    - 1
+    - false
+    - jenny@mail.com
+  - - 5
+    - Another Test
+    - "<p>MORDRED RULES&nbsp;</p>\r\n\r\n<p>MORDRED RULES&nbsp;</p>\r\n\r\n<p>MORDRED
+      RULES&nbsp;</p>\r\n\r\n<p>MORDRED RULES&nbsp;</p>\r\n\r\n<p>MORDRED RULES&nbsp;</p>\r\n\r\n<p>MORDRED
+      RULES&nbsp;</p>\r\n\r\n<p>MORDRED RULES&nbsp;</p>\r\n"
+    - '2018-02-15 16:01:43.007440'
+    - '2018-02-15 16:01:43.007440'
+    - 1
+    - false
+    - mordred@mail.com
+
+---
+authors:
+  columns:
+  - id
+  - username
+  - email
+  - crypted_password
+  - salt
+  - created_at
+  - updated_at
+  - role
+  records: 
+  - - 1
+    - Jenny
+    - jenny@mail.com
+    - "$2a$10$tpr2lOD53s1kenvylwAHdOs7RoC9ofpDDKI7bi.wxqgHqsNUe8YhO"
+    - DF6fhEJss9QcEj8U49t9
+    - '2018-02-14 15:23:34.460021'
+    - '2018-02-14 15:39:25.091394'
+    - redactor
+  - - 2
+    - haku
+    - haku@mail.com
+    - "$2a$10$/jwMzJGtptPPgw8xDrHj1eAD8rlbaHG4baSxxPi7R7KXR54FEE/Q2"
+    - UQFL32kLv4r-fmW5zBxt
+    - '2018-02-14 15:34:11.289445'
+    - '2018-02-14 15:38:59.404925'
+    - admin
+  - - 3
+    - mordred
+    - mordred@mail.com
+    - "$2a$10$h9vlsnZar/CeJE1/Ko.9OeTK6NhXmvopO6FGELrwX42Bf4dj7G1Iq"
+    - ZziYwLHsXrN25xLQPs3e
+    - '2018-02-15 15:59:34.914113'
+    - '2018-02-20 09:39:28.431672'
+    - redactor
+
+---
+categories:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Voyage
+    - '2018-02-14 15:14:40.234465'
+    - '2018-02-14 15:14:40.234465'
+
+---
+ckeditor_assets:
+  columns:
+  - id
+  - data_file_name
+  - data_content_type
+  - data_file_size
+  - type
+  - width
+  - height
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Tulips.jpg
+    - image/jpeg
+    - 620888
+    - Ckeditor::Picture
+    - 1024
+    - 768
+    - '2018-02-14 16:14:55.885268'
+    - '2018-02-14 16:14:55.885268'
+  - - 2
+    - Lighthouse.jpg
+    - image/jpeg
+    - 561276
+    - Ckeditor::Picture
+    - 1024
+    - 768
+    - '2018-02-14 16:31:01.955524'
+    - '2018-02-14 16:31:01.955524'
+  - - 3
+    - Penguins.jpg
+    - image/jpeg
+    - 777835
+    - Ckeditor::Picture
+    - 1024
+    - 768
+    - '2018-02-14 16:55:54.986921'
+    - '2018-02-14 16:55:54.986921'
+
+---
+taggings:
+  columns:
+  - id
+  - tag_id
+  - article_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - 1
+    - '2018-02-14 16:16:27.150488'
+    - '2018-02-14 16:16:27.150488'
+  - - 2
+    - 2
+    - 1
+    - '2018-02-14 16:16:27.152489'
+    - '2018-02-14 16:16:27.152489'
+  - - 3
+    - 1
+    - 2
+    - '2018-02-15 08:56:24.322855'
+    - '2018-02-15 08:56:24.322855'
+  - - 4
+    - 3
+    - 2
+    - '2018-02-15 08:56:24.324855'
+    - '2018-02-15 08:56:24.324855'
+  - - 5
+    - 4
+    - 2
+    - '2018-02-15 08:56:24.325855'
+    - '2018-02-15 08:56:24.325855'
+  - - 6
+    - 1
+    - 3
+    - '2018-02-15 15:50:44.198758'
+    - '2018-02-15 15:50:44.198758'
+  - - 7
+    - 1
+    - 4
+    - '2018-02-15 15:53:49.339348'
+    - '2018-02-15 15:53:49.339348'
+  - - 8
+    - 1
+    - 5
+    - '2018-02-15 16:01:43.010440'
+    - '2018-02-15 16:01:43.010440'
+  - - 9
+    - 5
+    - 5
+    - '2018-02-15 16:01:43.012440'
+    - '2018-02-15 16:01:43.012440'
+
+---
+tags:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - test
+    - '2018-02-14 16:16:26.954477'
+    - '2018-02-14 16:16:26.954477'
+  - - 2
+    - ''
+    - '2018-02-14 16:16:27.017481'
+    - '2018-02-14 16:16:27.017481'
+  - - 3
+    - pinguin
+    - '2018-02-15 08:56:24.031838'
+    - '2018-02-15 08:56:24.031838'
+  - - 4
+    - image
+    - '2018-02-15 08:56:24.156845'
+    - '2018-02-15 08:56:24.156845'
+  - - 5
+    - test2
+    - '2018-02-15 16:01:42.847431'
+    - '2018-02-15 16:01:42.847431'

@@ -33,13 +33,16 @@
 	<%= @article.category %>
 </p>
 </div>
-<p class='label label-warning'>
-  Tags:
-  <% @article.tags.each do |tag| %>
-    <%= link_to tag.name, tag_path(tag) %>
-  <% end %>
-</p>
 <% if logged_in? %>
+	<% if current_user.role == 'admin' %>
+		<p class='label label-warning'>
+		  Tags:
+			<% @article.tags.each do |tag| %>
+		    	<%= link_to tag.name, tag_path(tag) %>
+ 	 		<% end %>
+		</p>
+	<% end %>
+
 	<p> Ecrit par: <%= @article.writenby %> </p>
 <% end %>
 

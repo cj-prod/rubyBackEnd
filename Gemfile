@@ -10,6 +10,10 @@ end
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+#yaml_db dump database save/load
+gem 'mysql2', '~> 0.3.21'
+#yaml_db dump database save/load
+gem 'yaml_db'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets

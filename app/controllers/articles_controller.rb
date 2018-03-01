@@ -37,10 +37,13 @@ class ArticlesController < ApplicationController
 	end
 	def destroy
 		@article = Article.find(params[:id])
-		@article.destroy
-		flash.notice = "Article '#{@article.title}' Destroyed"
-		redirect_to articles_url
+		if current_user.role == 'admin'
+			@article.destroy
+			flash.notice = "Article '#{@article.title}' Destroyed"
+			redirect_to articles_url
+		end
 	end
+
 	def edit
 		@article = Article.find(params[:id])
 	end
